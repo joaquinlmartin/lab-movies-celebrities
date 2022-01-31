@@ -21,7 +21,7 @@ router.get("/celebrities", (req, res, next) => {
     Celebrity.find()
     .then((celebrities) => {
         res.render("celebrities/celebrities", {celebrities});
-    })     
+    })
 });
 
 module.exports = router;
